@@ -13,60 +13,87 @@
         <p>Some text</p>
     </header>
     <h2>Some Owl Photo</h2>
-        <img src="img/owl.png" alt="Owl">
-        <section>
-            <h3>Header 3 must be here...</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, nihil. Totam possimus
-                consequuntur
-                fuga exercitationem, consequatur beatae reiciendis quod quaerat officia quidem et molestias fugit minima
-                necessitatibus inventore, quibusdam expedita.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum tempore, inventore minus sit
-                reprehenderit cum nostrum vero totam rem! Ab animi minus, sequi tempore possimus provident eos est
-                doloribus!</p>
-        </section>
-        <section>
-            <ul>
-                <li>some element#1</li>
-                <li>some element#2</li>
-                <li>some element#3</li>
-                <li>...</li>
-            </ul>
-            <h4>Let's add some ordered list this time:)</h4>
-            <ol type="I">
-                <li>item#1</li>
-                <li>item#2</li>
-                <li>item#3</li>
-                <li>other</li>
-            </ol>
-            <h5> How about a description list under H5???</h5>
-            <dl>
-                <dt>Some sample</dt>
-                <dd>element</dd>
-                <dd>element</dd>
-                <dd>...</dd>
-                <dt>Other sample</dt>
-                <dd>element</dd>
-                <dd>other</dd>
-            </dl>
-        </section>
+    <img src="img/owl_small_size.png" alt="Owl">
+    <figcaption><em>Owls such an owls:)</em></figcaption>
+    <section>
+        <h3>Header 3 must be here...</h3>
+        <p>Lorem ipsum, dolor <b>sit amet consectetur adipisicing elit. Reprehenderit, nihil. Totam possimus
+            consequuntur</b>
+            fuga exercitationem, consequatur beatae reiciendis quod quaerat officia quidem et molestias fugit minima
+            necessitatibus inventore, quibusdam expedita.</p>
+        <p>Lorem ipsum dolor sit <u>amet consectetur adipisicing elit</u>. Minima harum tempore, inventore minus sit
+            reprehenderit cum nostrum vero totam rem! Ab animi minus, sequi tempore possimus provident eos est
+            doloribus:</p>
+        <ul>
+            <li>some element#1</li>
+            <li>some element#2</li>
+            <li>some element#3</li>
+            <li>...</li>
+        </ul>
+    </section>
+    <section>
+        <h4>Let's add some ordered list this time:)</h4>
+        <ol type="I">
+            <li>item#1</li>
+            <li>item#2</li>
+            <li>item#3</li>
+            <li>other</li>
+        </ol>
+        <h5> How about description list under H5???</h5>
+        <dl>
+            <dt>Some sample</dt>
+            <dd>element</dd>
+            <dd>element</dd>
+            <dd>...</dd>
+            <dt>Other sample</dt>
+            <dd>element</dd>
+            <dd>other</dd>
+        </dl>
+    </section>
 
 
+    <section>
         <form>
-            <section>
-                <fieldset>
-                    <label>Please fill this form:<br>
-                        <label for="fname">First name:</label><br>
-                        <input type="text" id="first-name" name="fname" value="Enter First name"><br>
-                        <label for="lname">Last name:</label><br>
-                        <input type="text" id="last-name" name="email" value="Enter Last name"><br>
-                        <label for="email">Email:</label><br>
-                        <input type="text" id="last-name" name="lname" value="Enter Email"><br>
-                        <input type="submit" value="Submit">
 
-                    </label>
-                </fieldset>
-            </section>
+            <fieldset>
+                <legend>Please fill this form</legend>
+
+                <label for="first-name">First name:</label><br>
+                <input type="text" id="first-name" name="fname" value="Enter First name"><br>
+                <label for="last-name">Last name:</label><br>
+                <input type="text" id="last-name" name="email" value="Enter Last name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="last-name" name="lname" value="Enter Email"><br>
+                <input type="submit" value="Submit">
+
+
+            </fieldset>
+
         </form>
+    </section>
+
+    <section>
+
+        <h2>Some other form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <fieldset>
+                <legend>Do you understand HTML?</legend>
+                <label><input id="yes" type="radio" checked> Yes</label>
+                <label><input id="no" type="radio"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>How do you find that owl pic?</legend>
+                <input id="sweet" type="checkbox" checked> <label for="sweet">Sweet</label>
+                <input id="bird" type="checkbox"> <label for="bird">Just a bird</label>
+                <input id="other" type="checkbox"> <label for="other">Other</label>
+            </fieldset><br>
+            <input type="text" name="photourl" placeholder="Some photo URL" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
+<footer>
+    <p>No Copyright - <a href="https://google.com"><em>Just google some...</em></a></p>
+</footer>
 
 </html>
